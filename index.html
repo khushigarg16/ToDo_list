@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<title>My ToDo list</title>
+	
+	<link rel="stylesheet" href="css/todoNew.css">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div class="container-fluid text-center">
+	    <h1 class="blink"><i class="fa fa-list-alt" aria-hidden="true"></i><strong> My ToDo List</strong></h1>
+	    <input type="text" id="userinput" class="form-control" placeholder="What you need to do" onkeydown="return searchKeyPress(event);">
+	    <button type="button" class="btn btn-success" id="add">Add a ToDo</button>
+	    <button type="button" class="btn btn-danger" id="removeall">Remove all ToDo</button>
+       <ul id="list">
+<!--       My first ToDo <button class="btn btn-xs btn-danger">&times;</button>-->
+       </ul>
+        
+        
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--   <script src="js/typed.js"></script>-->
+    <script src="js/todoJS.js"> </script>
+
+</body>
+
+</html>
